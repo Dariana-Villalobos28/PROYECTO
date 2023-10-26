@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PAPELERIA LAS 3D</title>
+    <style>
+        .contact_form {
+            text-align: center;
+            margin: 2em auto;
+        }
+
+        .formulario {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .formulario h1 {
+            font-size: 24px;
+        }
+
+        .formulario p {
+            text-align: left;
+            margin: 1em 0;
+        }
+
+        .colocar_nombre,
+        .colocar_email,
+        .colocar_telefono,
+        .colocar_website,
+        .colocar_asunto,
+        .colocar_mensaje {
+            font-weight: bold;
+        }
+
+        .obligatorio {
+            color: red;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="url"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        #enviar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #enviar:hover {
+            background-color: #555;
+        }
+
+        .aviso {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo">PAPELERIA LAS 3D</a>
+            <input type="checkbox" id="menu"/>
+            <label for="menu">
+                <img src="./img/menu.png" class="menu-icono" alt="menu">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+        <div>
+        <ul>
+        </ul>
+    </div>
+</div>
+    </header>
+    <div class="container">
+        <section>
+            <div class="border border-top-0 container w-80 mx-auto text-center fuente" id="contacto">
+    
+              <div class="formulario mt-5">      
+                <h1 class="mb-2 text-primary fs-4 fw-bolder">Formulario de contacto</h1>
+                  <h3 class="fs-6 text-decoration-underline">Escríbenos y en breve nos pondremos en contacto contigo</h3>                  
+                    <p>
+                      <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input class="mt-4" type="text" name="introducir_nombre" 
+                          id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                        
+                    </p>
+                        
+                    <p>
+                      <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="email" name="introducir_email" 
+                          id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                      
+                     <p>
+                      <label for="telefone" class="colocar_telefono">Teléfono
+                      </label>
+                        <input type="tel" name="introducir_telefono" 
+                          id="telefono" placeholder="Escribe tu teléfono">
+                    </p>    
+                        
+                    <p>
+                      <label for="website" class="colocar_website">Sitio web
+                      </label>
+                        <input type="url" name="introducir_website" 
+                          id="website" placeholder="Escribe la URL de tu web">
+                    </p>    
+                        
+                     <p>
+                      <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_asunto" 
+                          id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>    
+                        
+                          <p>
+                            <label for="mensaje" class="colocar_mensaje">Mensaje
+                              <span class="obligatorio">*</span>
+                            </label>                     
+                            <textarea name="introducir_mensaje" class="texto_mensaje" 
+                            id="mensaje" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
+                            </p>                    
+                            <input class="btn btn-primary" type="submit">
+                          <p class="aviso">
+                            <span class="obligatorio text-danger"> * </span> 
+                            <span class="text-decoration-underline">los campos son obligatorios</span>
+                          
+                          </p>          
+                      
+                    </form>
+              </div>  
+            </div>
+          </section>
+    </div>
+
+    <div class="social">
+            <a href="https://www.facebook.com" class="social-button">
+                <img src="./img/facebook.png" alt="facebook">
+            </a>
+            <a href="https://www.whatsapp.com" class="social-button">
+                <img src="./img/whats.png" alt="whatsapp">
+            </a>
+            <a href="https://www.instagram.com" class="social-button">
+                <img src="./img/instragram.png" alt="instagram">
+            </a>
+    </div>
+
+    <footer class="footer">
+        <!-- Tu código de pie de página -->
+    </footer>
+</body>
+</html>
